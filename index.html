@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Score de Wang</title>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <h1 id="title">Score de Wang</h1>
+    <a href="list.html"><img src="57419.png"></a>
+    
+    <div id="n1">
+        <ol>
+            <li><h5>Fréquence respiratoire</h5></li>
+            <br>
+            <li><input type="radio" name="FC" class="0"><a>Inferieur à 30 / minutes</a></li>
+            <li><input type="radio" name="FC" class="1"><a>31 à 45 / minutes</a></li>
+            <li><input type="radio" name="FC" class="2"><a>45 à 60 / minutes</a></li>
+            <li><input type="radio" name="FC" class="3"><a>Supérieur à 60 / minutes</a></li>
+        </ol>
+        
+        <ol id="o2">
+            <li>
+                <h5>Wheezing</h5>
+            </li>
+            <br>
+            <li><input type="radio" name="W" class="0"><a>Aucun</a></li>
+            <li><input type="radio" name="W" class="1"><a>Audible en fin d'expiration ou à l'auscultation</a></li>
+            <li><input type="radio" name="W" class="2"><a>Audible sur toute l'expiration ou sans stéthoscope</a></li>
+            <li><input type="radio" name="W" class="3"><a>Audible à l'inspiration et à l'expiration sans stéthoscope</a></li>
+        </ol>
+        <ol id="o3">
+            <li>
+                <h5>Tirage</h5>
+            </li>
+            <br>
+            <li><input type="radio" name="T" class="0"><a>Aucun</a></li>
+            <li><input type="radio" name="T" class="1"><a>Intercostal seuleument</a></li>
+            <li><input type="radio" name="T" class="2"><a>Sus-sternal ou xiphoïdien</a></li>
+            <li><input type="radio" name="T" class="3"><a>Sévère avec battement des ailes du nez</a></li>
+        </ol>
+        <ol id="o4">
+            <li>
+                <h5>Etat général</h5>
+            </li>
+            <br>
+            <li><input type="radio" name="EG" class="0"><a>Normal</a></li>
+            <li><input type="radio" name="EG" class="3"><a>Irritable, léthargique, difficultés alimentaires</a></li>
+        </ol>
+        
+    </div>
+    <div id="calculer">
+        <a class="a" id="total">Calculer</a>
+        <label id="end"></label>
+        <label id="severite"></label>
+        <label id="bronchiolite"></label>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
